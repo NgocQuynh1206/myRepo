@@ -38,19 +38,19 @@ router.get('/', function(req, res, next) {
   							  valueX: x});
   	}
   	else {
-	  	if(!x && y) {
-	  		res.render('index', { notice: "Chưa nhập số thứ nhất",
+	  	if(isNaN(x) && y) {
+	  		res.render('index', { notice: "Số thứ nhất không phải là số",
 	  							  valueY: y});
 	  	}
 	  	else
 	  	{
-	  		if(!y && x) {
-	  			res.render('index', { notice: "Chưa nhập số thứ hai",
-	  								  valueX: x});
+	  		if(isNaN(y) && x) {
+	  			res.render('index', { notice: "Số thứ hai không phải là số",
+	  							  valueX: x});
 	  		}
 	  		else {
-	  			if(!y && !x)
-	  				res.render('index', { notice: "Chưa nhập số thứ nhất"});
+	  			if(isNaN(x) && isNaN(y))
+	  				res.render('index', { notice: "Số thứ nhất không phải là số"});
 	  			else{
 	  				res.render('index');
 	  			}
