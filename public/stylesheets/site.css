@@ -1,0 +1,47 @@
+#container {
+	font-family: 'open sans';
+	font-size: 12pt;
+}
+
+#page-title {
+	text-align: center;
+}
+
+.row {
+	margin-top: 10px;
+}
+
+#txtX {
+
+}
+
+#txtY {
+	margin-left: 7px;
+}
+
+#txtResult {
+	margin-left: 22px;
+}
+
+#input {
+	float: left;
+	margin-left: 35%;
+}
+
+#selection {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#calc {
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#result {
+	float: left;
+	margin-top: 120px;
+	margin-right: 50px;
+}

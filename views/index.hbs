@@ -1,0 +1,19 @@
+<div id="container">
+	<h1 id="page-title">Bé tập tính</h1>
+	<form action="">
+		<div id="input">
+			<div class="row">Số thứ nhất <input type="text" id="txtX" name="txtX" value="{{valueX}}"></div>
+			<div class="row">Số thứ hai <input type="text" id="txtY" name="txtY" value="{{valueY}}"></div>
+			<div class="row">Kết quả <input type="text" id="txtResult" readonly value="{{result}}"></div>
+			<div class="row">Thông báo {{notice}}</div>
+		</div>
+
+		<div id="selection">
+			<input type="radio" name="operation" value="cong"> Cộng<br>
+			<input type="radio" name="operation" value="tru"> Trừ<br>
+			<input type="radio" name="operation" value="nhan"> Nhân<br>
+			<input type="radio" name="operation" value="chia"> Chia
+		</div>
+		<button id="calc" type="submit">Tính</button>
+	</form>
+</div>
